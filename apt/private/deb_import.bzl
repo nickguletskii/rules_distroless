@@ -67,6 +67,7 @@ def deb_import(name, url, sha256):
         url = url,
         sha256 = sha256,
         build_file_content = _DEB_IMPORT_BUILD_TMPL,
+        type = "deb",
     )
 
 def _deb_import_tmpl(repo_name, package):
